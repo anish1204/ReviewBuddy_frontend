@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { api } from "@/utils/api";
 import Button from './components/Button'
+import Link from 'next/link';
 import { useRouter } from "next/navigation";
 
 export default function Login() {
@@ -39,7 +40,7 @@ export default function Login() {
 
       <div className="w-full text-center">
         <p>
-          Don't Have a Account? <a className="underline text-blue-500" href="/register" >Click Here</a>
+          Don&apos;t Have a Account? <Link className="underline text-blue-500" href="/register" >Click Here</Link>
         </p>
       </div>
     </div>

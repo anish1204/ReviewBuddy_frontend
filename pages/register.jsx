@@ -4,6 +4,7 @@ import { useState } from "react";
 import { api } from "@/utils/api";
 import { useRouter } from "next/navigation";
 import Button from './components/Button'
+import Link from 'next/link';
 export default function Register() {
   const r = useRouter();
   const [f, setF] = useState({ name: "", email: "", password: "" });
@@ -40,7 +41,7 @@ export default function Register() {
       </div>
       <div className="w-full text-center">
         <p>
-          Already Have a Account? <a className="underline text-blue-500" href="/login" >Click Here</a>
+          Already Have a Account? <Link className="underline text-blue-500" href="/login" >Click Here</Link>
         </p>
       </div>
     </div>

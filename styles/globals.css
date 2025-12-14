@@ -15,6 +15,13 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+.containerx{
+  @apply lg:px-[5vw] px-[1.4rem]
+} 
+.containery{
+  @apply lg:py-[3vw] py-[1.4rem]
+
+}
 
 body {
   color: rgb(var(--foreground-rgb));

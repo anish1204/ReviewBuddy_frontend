@@ -17,7 +17,7 @@ export default function Login() {
 
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("user", JSON.stringify(res.data.user));
-      r.push(res.data.user.role === "admin" ? "/admin" : "/feedback");
+      r.push(res.data.user.role === "vendor" ? "/vendor/products" : "/products");
     } catch (err) {
       console.log("LOGIN ERROR:", err.response?.data);
       alert(err.response?.data?.message || "Login failed");
@@ -33,7 +33,7 @@ export default function Login() {
 
 
       <div onClick={submit} className="w-full flex justify-center">
-        <Button title={"Register"} type={"first"} />
+        <Button title={"Login"} type={"first"} />
       </div>
 
 

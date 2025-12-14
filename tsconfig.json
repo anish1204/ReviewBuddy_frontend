@@ -17,6 +17,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/products/[slug].js", "pages/components/ProductAnalyticsCard.jsx"],
   "exclude": ["node_modules"]
 }

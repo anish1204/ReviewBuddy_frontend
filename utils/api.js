@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
- baseURL: "https://reviewbuddy-backend.onrender.com/api"
+ baseURL: process.env.NEXT_PUBLIC_LOCAL_BACKEND_URL
 });
 
 // attach token automatically
